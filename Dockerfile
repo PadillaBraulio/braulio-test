@@ -5,5 +5,9 @@ RUN apt-get update && \
 
 RUN chgrp -R 0 /var/log/nginx && \
     chmod -R g=u /var/log/nginx
+
+RUN chgrp -R 0 /etc/nginx && \
+    chmod -R g=u /etc/nginx
+
 CMD nginx -g 'daemon off;'
 USER 10001
