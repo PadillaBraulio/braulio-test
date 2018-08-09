@@ -11,4 +11,3 @@ RUN chgrp -R 0 /etc/nginx && \
 
 COPY ./conf /etc/nginx/nginx.conf
 CMD nginx -g 'daemon off;'
-USER 1001
