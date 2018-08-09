@@ -9,5 +9,8 @@ RUN chgrp -R 0 /var/log/nginx && \
 RUN chgrp -R 0 /etc/nginx && \
     chmod -R g=u /etc/nginx
 
+RUN chgrp -R 0 /var/lib/nginx && \
+    chmod -R g=u /var/lib/nginx
+
 COPY ./conf /etc/nginx/nginx.conf
 CMD nginx -g 'daemon off;'
