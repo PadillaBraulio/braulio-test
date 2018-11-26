@@ -4,3 +4,4 @@ node {
   stage 'deploy'
   openshiftDeploy(deploymentConfig: 'nodejs-mongo-persistent')
 }
+sss
