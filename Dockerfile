@@ -19,4 +19,5 @@ COPY ./conf /etc/nginx/nginx.conf
 COPY ./sites /etc/nginx/sites-available/default
 
 EXPOSE 8080
+LABEL hello-word
 CMD nginx -g 'daemon off;'
